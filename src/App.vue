@@ -1,7 +1,8 @@
 <template>
-  <nav>
-    <router-link to='/'>Accueil</router-link>
-    <router-link to='/'>Modifier</router-link>
+  <nav class="fixed top-0 bg-blue-500 text-white h-20 items-center w-full flex justify-center">
+    <router-link class="hover:text-gray-200 px-8 h-full flex items-center" to='/'>Accueil</router-link>
+    <router-link class="hover:text-gray-200 px-8 h-full flex items-center" to='/modify'>Modifier</router-link>
+    <router-link class="hover:text-gray-200 px-8 h-full flex items-center" to='/add'>Ajouter</router-link>
   </nav>
   <router-view />
 </template>
