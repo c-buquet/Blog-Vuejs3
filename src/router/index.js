@@ -10,8 +10,8 @@ const routes = [
     path: '/',
     component: Home,
   }, {
-    name: 'Modify',
-    path: '/modify/:name',
+    name: 'post',
+    path: '/modify/:id',
     component: Modify,
     props: true,
   }, {
