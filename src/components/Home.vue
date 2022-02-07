@@ -18,6 +18,9 @@
           <div class="mt-3">
             <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
           </div>
+            <button>
+                <router-link class="hover:text-gray-200 px-8 h-full flex items-center" :to="{name: 'Modify', params: {name: 'Modifier'}}">Modifier l'article</router-link>
+            </button>
         </div>
   
         <div>
@@ -31,6 +34,9 @@
           <div class="mt-3">
             <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
           </div>
+            <button>
+                <router-link class="hover:text-gray-200 px-8 h-full flex items-center" :to="{name: 'Modify', params: {name: 'Modifier'}}">Modifier l'article</router-link>
+            </button>
         </div>
   
         <div>
@@ -44,6 +50,9 @@
           <div class="mt-3">
             <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
           </div>
+            <button>
+                <router-link class="hover:text-gray-200 px-8 h-full flex items-center" :to="{name: 'Modify', params: {name: 'Modifier'}}">Modifier l'article</router-link>
+            </button>
         </div>
   
         <div>
@@ -57,9 +66,23 @@
           <div class="mt-3">
             <a href="#" class="text-base font-semibold text-indigo-600 hover:text-indigo-500"> Read full story </a>
           </div>
+            <button>
+                <router-link class="hover:text-gray-200 px-8 h-full flex items-center" :to="{name: 'Modify', params: {name: 'Modifier'}}">Modifier l'article</router-link>
+            </button>
         </div>
       </div>
     </div>
   </div>
 
 </template>
+
+<script>
+export default {
+  name: 'Articles',
+  computed: {
+    articles() {
+      return this.$store.getters.getMovies;
+    }
+  }
+}
+</script>
